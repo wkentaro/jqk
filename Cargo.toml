@@ -1,0 +1,21 @@
+[package]
+name = "jqk"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "jqk lists key patterns of a JSON file for jq."
+homepage = "https://github.com/wkentaro/jqk"
+documentation = "https://github.com/wkentaro/jqk/blob/master/README.md"
+repository = "https://github.com/wkentaro/jqk"
+readme = "README.md"
+keywords = ["jq", "json"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+atty = "0.2.14"
+calm_io = "0.1.1"
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0.104", features = ["derive"] }
+serde_json = { version = "1.0.48", features = ["preserve_order"] }
