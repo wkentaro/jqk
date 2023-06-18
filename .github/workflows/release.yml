@@ -23,26 +23,14 @@ defaults:
 
 jobs:
   create-release:
-    if: github.repository_owner == 'wkentaro'
-    runs-on: ubuntu-20.04
-    timeout-minutes: 60
-    permissions:
-      contents: write
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - name: Install Rust
-        run: rustup update stable --no-self-update
-      - run: cargo package
       - uses: taiki-e/create-gh-release-action@v1
         with:
           branch: main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: cargo publish
-        env:
-          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
 
   upload-assets:
     name: ${{ matrix.target }}
