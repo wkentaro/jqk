@@ -37,7 +37,6 @@ jobs:
       - run: cargo package
       - uses: taiki-e/create-gh-release-action@v1
         with:
-          changelog: CHANGELOG.md
           title: $version
           branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
