@@ -12,6 +12,11 @@ easy to do especially when a JSON file has so many nests and arrays. jqk helps
 to render all keys with the jq patterns so that you can look through a JSON
 file using pagers like `less` to find the pattern you need to pass to jq.
 
+## Installation
+
+Download a pre-built binary from
+[the latest release](https://github.com/wkentaro/jqk/releases).
+
 ## Examples
 
 NOTE: `cat xxx.json | jqk` is equivalent to `jqk xxx.json`.
