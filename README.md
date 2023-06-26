@@ -14,8 +14,14 @@ file using pagers like `less` to find the pattern you need to pass to jq.
 
 ## Installation
 
-Download a pre-built binary from
+1. Download a pre-built binary from
 [the latest release](https://github.com/wkentaro/jqk/releases).
+
+2. Or install via `cargo`:
+
+```bash
+cargo install jqk
+```
 
 ## Examples
 
