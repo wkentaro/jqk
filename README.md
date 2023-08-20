@@ -62,3 +62,9 @@ $ cat examples/data.json | jq .departments[].projects[].name
 "Project B"
 "Campaign X"
 ```
+
+
+## Related projects
+
+- `jq`: https://github.com/jqlang/jq
+- `jqk-python`: https://github.com/wkentaro/jqk-python
